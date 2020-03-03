@@ -1,0 +1,25 @@
+{
+  "name": "gulp-ejs-starter",
+  "version": "1.0.0",
+  "description": "gulp / ejs starter.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/McTex/gulp-ejs-starter.git"
+  },
+  "author": "McTex",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/McTex/gulp-ejs-starter/issues"
+  },
+  "homepage": "https://github.com/McTex/gulp-ejs-starter#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-ejs": "^5.0.0",
+    "gulp-sass": "^4.0.2"
+  }
+}
