@@ -1,9 +1,33 @@
 # gulp-ejs-starter
-gulp / ejs starter
+gulp / ejs starter.
+html : use ejs.
+javascript : use es6 syntax and bundle with webpack.
+css : use scss.
 
-## 
+## Require
+* node.js
+version >= 12.16.1
 
-## commit rules
+## Getting Started
+### Install npm package
+```bash
+npm install
+yarn install
+```
+
+## Usage
+### Commands
+#### Run develop server
+```bash
+npm run dev
+yarn dev
+```
+#### Build
+```bash
+npm run build
+yarn build
+```
+## Commit rules
 ### Emoji Prefix
 |Emoji| コミットタイプ|
 |---|---|
@@ -23,7 +47,7 @@ gulp / ejs starter
 |🔖  `:bookmark:` |バージョンアップ|
 |🎉 `:tada:`|イニシャルコミット|
 
-### コミットメッセージの種別
+### Type of commit
 
 |コミットメッセージ | 意味|
 |---|---|
