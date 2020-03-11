@@ -178,16 +178,3 @@ gulp.task('serve', gulp.series(gulp.parallel(style, script, html), (callback) =>
 //  default
 //  ** ------------------
 gulp.task('default', gulp.series(clean, gulp.parallel(script, copy, html, imagemin, style)));
-
-// //  ** ------------------
-// //  buildf
-// //  ** ------------------
-// gulp.task('build', () => {
-//   runSequence(
-//     'clean',
-//     'copy',
-//     'minifyHtml',
-//     'minifyJs',
-//     'minifyCss'
-//   );
-// });
