@@ -1,0 +1,9 @@
+{
+  "default": {
+    "title": "title",
+    "description": "desc",
+    "keyword": "key",
+    "image": "",
+    "canonical": ""
+  }
+}

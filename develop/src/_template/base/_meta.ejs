@@ -1,0 +1,30 @@
+<%
+  var _default = json['default'];
+  for ( var key in _default ) {
+    if ( typeof page[key] === 'undefined' ) {
+      page[key] = _default[key];
+    }
+  }
+%>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title><%= page['title'] %></title>
+  <meta name="description" content="<%= page['description'] %>">
+  <meta name="keywords" content="<%= page['keywords'] %>">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+  <link rel="shortcut icon" href="">
+  <link rel="apple-touch-icon" sizes="152x152" href="">
+  <meta name="msapplication-TileImage" content="">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:title" content="<%= page['title'] %>">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="<%= page['description'] %>">
+  <meta property="og:url" content="<%= page['canonical'] %>">
+  <meta property="og:image" content="<%= page['image'] %>">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="<%= page['title'] %>">
+  <meta name="twitter:description" content="<%= page['description'] %>">
+  <meta name="twitter:image:src" content="<%= page['image'] %>">
+  <meta name="twitter:domain" content="<%= page['canonical'] %>">
