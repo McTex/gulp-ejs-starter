@@ -19,8 +19,8 @@ yarn install
 ### Commands
 #### Run develop server
 ```bash
-npm run dev
-yarn dev
+npm run start
+yarn start
 ```
 #### Build
 ```bash
