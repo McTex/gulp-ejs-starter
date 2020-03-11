@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head><%-
-  include('./_template/base/_meta', {
+  include('../_template/base/_meta', {
     page: json['default']
   });
 %>
@@ -10,15 +10,15 @@
 </head>
 <body>
   <div>
-  <%- include('./_template/layout/_header') %>
+  <%- include('../_template/layout/_header') %>
     <main>
-      top
-      <a href="/under/"> to under</a>
+      under
+      <a href="/">back to top</a>
     </main>
-  <%- include('./_template/layout/_footer') %>
+  <%- include('../_template/layout/_footer') %>
   </div>
 
   <script src="/assets/js/vendor.bundle.js"></script>
-  <script src="/assets/js/main.bundle.js"></script>
+  <script src="/assets/js/under.bundle.js"></script>
 </body>
 </html>
