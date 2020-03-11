@@ -1,1 +1,22 @@
-<p>t</p>
+<!DOCTYPE html>
+<html lang="ja">
+<head><%-
+  include('./_template/base/_meta', {
+    page: json['default']
+  });
+%>
+<link rel="stylesheet" href="/assets/css/common.min.css">
+<link rel="stylesheet" href="/assets/css/main.min.css">
+</head>
+<body>
+  <div>
+  <%- include('./_template/layout/_header') %>
+    <main>
+    </main>
+  <%- include('./_template/layout/_footer') %>
+  </div>
+
+  <script src="/assets/js/vendor.bundle.js"></script>
+  <script src="/assets/js/main.bundle.js"></script>
+</body>
+</html>

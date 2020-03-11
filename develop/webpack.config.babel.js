@@ -1,25 +1,35 @@
 import path from 'path';
 import glob from 'glob';
+import globEntries from 'webpack-glob-entries';
 
 // const path = require('path');
 // const glob = require('glob');
 
 module.exports = {
-  entry: glob.sync('./src/**/**/js'),
+  entry: globEntries('./src/assets/js/*.js'),
   output: {
     filename: '[name].bundle.js',
-    path: path.join(__dirname, 'dist'),
+    path: path.join(__dirname),
   },
-  resolve: {
-    extensions: ['.js', '.css']
+  optimization: {
+    splitChunks: {
+      name: 'vendor',
+      chunks: 'initial',
+    },
   },
   module: {
-    rules: [
-      {
-        test: /\.js$/,
-        loader: ['babel-loader', 'eslint-loader'],
-        exclude: /node_modules/
-      },
-    ]
-  }
-};
+    rules: [{
+      test: /\.js$/,
+      use: [
+        {
+          loader: 'babel-loader',
+          options: {
+            presets: [
+              '@babel/preset-env'
+            ]
+          }
+        }
+      ]
+    }]
+  },
+}
